@@ -31,7 +31,7 @@ Features:
  * petal_width
 
 ## Model is saved as:
-\'\'\'bash
+\'\'\'
 model.pkl
 \'\'\'
 
