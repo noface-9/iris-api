@@ -31,9 +31,9 @@ Features:
  * petal_width
 
 ## Model is saved as:
-'''bash
+\'\'\'bash
 model.pkl
-'''
+\'\'\'
 
 ## Tech Stack
 |Component|Tool|
@@ -45,65 +45,65 @@ model.pkl
 |Language|Python 3.x|
 
 ## Project Structure
-'''bash
-.
-├── .dockerignore         # Files to ignore in Docker
-├── .gitignore            # Files to ignore in git
-├── main.py               # FastAPI application
-├── model.pkl             # Not saved in Git - has pkl model
-├── requirements.txt      # Dependencies
-├── Dockerfile            # Docker configuration
-├── README.md             # Documentation
-├── iris.csv              # Input used for training
-└── iris_predictor.csv    # Input used for testing
-'''
+\'\'\'bash
+
+--- .dockerignore         # Files to ignore in Docker
+--- gitignore            # Files to ignore in git
+--- main.py               # FastAPI application
+--- model.pkl             # Not saved in Git - has pkl model
+--- requirements.txt      # Dependencies
+--- Dockerfile            # Docker configuration
+--- README.md             # Documentation
+--- iris.csv              # Input used for training
+--- iris_predictor.csv    # Input used for testing
+\'\'\'
 
 Running the API Locally
 1. Create & activate your environment (optional)
-'''bash
+\'\'\'bash
 conda create -n iris_api python=3.10
 conda activate iris_api
-'''
+\'\'\'
 2. Install dependencies
-'''bash
+\'\'\'bash
 pip install -r requirements.txt
-'''
+\'\'\'
 3. Start the FastAPI server
-'''bash
+\'\'\'bash
 uvicorn main:app --reload
-'''
+\'\'\'
 4. Open the API docs
 FastAPI provides automatic documentation:
-'''bash
+\'\'\'bash
 http://127.0.0.1:8000/docs
-'''
-'''bash
+\'\'\'
+\'\'\'bash
 http://127.0.0.1:8000/redoc
-'''
+\'\'\'
 
 ## Example Prediction Request (JSON)
-'''bash
+\'\'\'bash
 {
   "sepal_length": 5.1,
   "sepal_width": 3.5,
   "petal_length": 1.4,
   "petal_width": 0.2
 }
-'''
+\'\'\'
 
 ## Running with Docker
 1. Build the Docker image
-'''bash
+\'\'\'bash
 docker build -t iris-api
-'''
+\'\'\'
 2. Run the container
-'''bash
+\'\'\'bash
 docker run -p 8000:8000 iris-api
-'''
+\'\'\'
 3. Access the API
-'''bash
+\'\'\'bash
 http://localhost:8000/docs
-'''
+\'\'\'
 
 ## Contributions
 Feel free to fork this project, raise issues, or submit pull requests.
