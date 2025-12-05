@@ -27,10 +27,6 @@ jobs:
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
 
-      - run: echo ${{ github.actor }}
-      - run: echo ${{ secrets.GITHUB_TOKEN }}
-      - run: echo ${{ github.sha }}
-
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v2
 
