@@ -2,8 +2,7 @@ __pycache__/
 *.pyc
 *.pyo
 *.ipynb
-.env
-model.pkl
+.envs
 curl.sh
 confusion_matrix.png
 desktop.ini
